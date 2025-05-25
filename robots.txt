@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://executivebooksummaries.netlify.app/sitemap.xml
