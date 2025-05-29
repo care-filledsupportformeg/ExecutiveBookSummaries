@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth"> <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executive Book Summaries | Audio Book Summaries for Professionals & Students</title>
+    <title>Executive Book Summaries | Audio Book Summaries for Busy Professionals & Students</title>
     <meta name="description" content="Unlock key insights from best-selling books with Executive Book Summaries. Concise audio summaries for finance, productivity, leadership & more. Learn smarter on the go!">
-    <meta name="keywords" content="book summaries, audio books, executive summaries, business books, self-help books, productivity, leadership, finance, learning, education, professional development, student resources">
-    <meta property="og:title" content="Executive Book Summaries | Audio Book Summaries">
-    <meta property="og:description" content="Concise audio summaries of best-selling books for busy professionals and students. Learn smarter on the go!">
-    <meta property="og:image" content="https://executivebooksummaries.netlify.app/images/og-image.jpg"> <meta property="og:url" content="https://executivebooksummaries.netlify.app/">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Executive Book Summaries | Audio Book Summaries">
-    <meta name="twitter:description" content="Concise audio summaries of best-selling books for busy professionals and students. Learn smarter on the go!">
-    <meta name="twitter:image" content="https://executivebooksummaries.netlify.app/images/twitter-card-image.jpg"> <meta name="twitter:site" content="@ExecBookSummary"> <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="images/favicon.png" type="image/png"> <style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -23,7 +17,9 @@
             background-size: cover;
             background-position: center;
         }
-        /* .gradient-overlay class definition is removed as it's now an inline style in the Hero Section div for the new navy gradient */
+        .gradient-overlay {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+        }
         .card-hover:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -33,6 +29,18 @@
         }
         .cta-button {
             @apply inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition duration-300 ease-in-out;
+        }
+        .social-icon {
+            @apply text-gray-600 hover:text-blue-600 transition-colors duration-300;
+        }
+        /* Ensure content area below fixed header is not obscured */
+        body {
+            padding-top: 4rem; /* Adjust this value based on your header's height */
+        }
+        @media (min-width: 768px) { /* md breakpoint */
+            body {
+                padding-top: 4.5rem; /* Adjust for larger screens if header height changes */
+            }
         }
     </style>
     <script type="application/ld+json">
@@ -59,86 +67,73 @@
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://executivebooksummaries.netlify.app/?s={search_term_string}"
+            "urlTemplate": "https://executivebooksummaries.netlify.app/?s={search_term_string}" 
           },
           "query-input": "required name=search_term_string"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Executive Book Summaries",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://executivebooksummaries.netlify.app/images/logo.png"
-            }
         }
       },
       {
         "@context": "https://schema.org",
-        "@type": "AudioObject", 
-        "@id": "https://executivebooksummaries.netlify.app/#summary-buffett",
-        "name": "The Essays of Warren Buffett: Lessons for Corporate America - Audio Summary",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://executivebooksummaries.netlify.app/#summaries" 
+        },
+        "headline": "The Essays of Warren Buffett: Lessons for Corporate America - Summary",
+        "image": "https://executivebooksummaries.netlify.app/images/book-cover-buffett.jpg", 
+        "author": {
+          "@type": "Organization",
+          "name": "Executive Book Summaries"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Executive Book Summaries",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://executivebooksummaries.netlify.app/images/logo.png" 
+          }
+        },
+        "datePublished": "2024-03-16", 
         "description": "Audio summary and key insights from The Essays of Warren Buffett: Lessons for Corporate America.",
-        "uploadDate": "2024-03-16",
-        "duration": "PT15M",
-        "contentUrl": "https://youtu.be/29_FdMqWTK4?si=H03mVR3fHYXrQjqj",
-        "thumbnailUrl": "https://executivebooksummaries.netlify.app/images/book-cover-buffett.jpg",
+        "articleSection": "Book Summaries" 
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://executivebooksummaries.netlify.app/#summaries"
+        },
+        "headline": "Laughing at Wall Street by Chris Camillo - Summary",
+        "image": "https://executivebooksummaries.netlify.app/images/book-cover-camillo.jpg", 
         "author": {
-          "@type": "Person",
-          "name": "Warren Buffett"
+          "@type": "Organization",
+          "name": "Executive Book Summaries"
         },
         "publisher": {
           "@type": "Organization",
           "name": "Executive Book Summaries",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://executivebooksummaries.netlify.app/images/logo.png"
+            "url": "https://executivebooksummaries.netlify.app/images/logo.png" 
           }
         },
-        "isPartOf": {
-            "@type": "WebPage",
-            "@id": "https://executivebooksummaries.netlify.app/#summaries"
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "AudioObject",
-        "@id": "https://executivebooksummaries.netlify.app/#summary-camillo",
-        "name": "Laughing at Wall Street by Chris Camillo - Audio Summary",
+        "datePublished": "2024-03-16", 
         "description": "Audio summary and key insights from Laughing at Wall Street by Chris Camillo.",
-        "uploadDate": "2024-03-16",
-        "duration": "PT12M",
-        "contentUrl": "https://youtu.be/L_3KlJbc_1E?si=42UMsAkR9grBZ7bn",
-        "thumbnailUrl": "https://executivebooksummaries.netlify.app/images/book-cover-camillo.jpg",
-        "author": {
-          "@type": "Person",
-          "name": "Chris Camillo"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Executive Book Summaries",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://executivebooksummaries.netlify.app/images/logo.png"
-          }
-        },
-         "isPartOf": {
-            "@type": "WebPage",
-            "@id": "https://executivebooksummaries.netlify.app/#summaries"
-        }
+        "articleSection": "Book Summaries"
       },
       {
         "@context": "https://schema.org",
-        "@type": "AudioObject",
-        "@id": "https://executivebooksummaries.netlify.app/#summary-lynch",
-        "name": "Peter Lynch's Investment Principles - Audio Summary",
-        "description": "Audio summary and key insights from Peter Lynch's Investment Principles.",
-        "uploadDate": "2024-03-16",
-        "duration": "PT18M", 
-        "contentUrl": "https://www.youtube.com/watch?v=-6Ng7nJD4_w&t=25s",
-        "thumbnailUrl": "https://executivebooksummaries.netlify.app/images/book-cover-lynch.jpg",
-        "author": { 
-          "@type": "Person",
-          "name": "Peter Lynch"
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://executivebooksummaries.netlify.app/#summaries"
+        },
+        "headline": "Peter Lynch's Investment Principles - Summary",
+        "image": "https://executivebooksummaries.netlify.app/images/book-cover-lynch.jpg", 
+        "author": {
+          "@type": "Organization",
+          "name": "Executive Book Summaries"
         },
         "publisher": {
           "@type": "Organization",
@@ -148,278 +143,199 @@
             "url": "https://executivebooksummaries.netlify.app/images/logo.png"
           }
         },
-        "isPartOf": {
-            "@type": "WebPage",
-            "@id": "https://executivebooksummaries.netlify.app/#summaries"
-        }
+        "datePublished": "2024-03-16", 
+        "description": "Audio summary and key insights from Peter Lynch's Investment Principles.",
+        "articleSection": "Book Summaries"
       }
     ]
     </script>
 </head>
 <body class="bg-gray-50 text-gray-700">
 
-    <header id="site-header" class="bg-white shadow-md fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
-        <div class="container mx-auto px-4 sm:px-6 py-3 md:py-4 flex justify-between items-center">
-            <a href="#home" class="flex items-center space-x-2 rtl:space-x-reverse">
-                <img src="images/logo.png" alt="Executive Book Summaries Logo" class="h-8 md:h-10 w-auto rounded">
-                <span class="text-lg sm:text-xl font-bold text-gray-800 hidden sm:inline self-center">Executive Book Summaries</span>
+    <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 md:py-5 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2">
+                <!-- 
+                    IMAGE ACTION: Choose one of your uploaded logos.
+                    Rename it to "logo.png".
+                    Place it in the "images" folder.
+                    Example: "Sleek professional YouTube logo for Executive Book Summaries, minimalist modern style, navy blue grey white palette, open book or upward arrow symbol, versatile for digital use.jpg"
+                    could be renamed to logo.png and placed in images/logo.png
+                -->
+                <img src="images/logo.png" alt="Executive Book Summaries Logo" class="h-10 w-auto" onerror="this.onerror=null;this.src='https://placehold.co/150x50/000000/FFFFFF?text=Logo';">
+                <div class="text-xl font-bold text-gray-800 hidden sm:inline">Executive Book Summaries</div>
             </a>
-            <nav id="main-nav" aria-label="Main navigation">
-                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false" aria-controls="mobile-menu">
-                    <span class="sr-only">Open main menu</span>
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
-                <div id="mobile-menu" class="hidden md:flex md:items-center md:space-x-4 lg:space-x-6">
-                    <a href="#home" class="block md:inline-block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50">Home</a>
-                    <a href="#about" class="block md:inline-block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50">About</a>
-                    <a href="#summaries" class="block md:inline-block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50">Summaries</a>
-                    <a href="#why-listen" class="block md:inline-block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50">Why Listen?</a>
-                    <a href="#contact" class="block md:inline-block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50">Contact</a>
-                </div>
+            <nav class="space-x-4 md:space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="#summaries" class="text-gray-600 hover:text-blue-600">Summaries</a>
+                <a href="#why-listen" class="text-gray-600 hover:text-blue-600">Why Listen?</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main id="main-content">
-        <!-- HERO SECTION - UPDATED -->
-        <section id="home" aria-labelledby="hero-title" class="hero-bg text-white relative pt-16 md:pt-20">
-            <div class="gradient-overlay" style="background: linear-gradient(to bottom, rgba(30, 41, 59, 0.75), rgba(30, 41, 59, 0.6)); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
-            <div class="container mx-auto px-6 py-20 md:py-32 text-center relative z-10">
-                <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight">Unlock Knowledge On The Go</h1>
-                <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">Access concise audio summaries of best-selling books, perfect for busy professionals and students. Learn smarter, not harder, with actionable insights you can use today from top non-fiction titles.</p>
-                <a href="https://www.youtube.com/@executivebooksummaries" target="_blank" rel="noopener noreferrer" class="cta-button text-lg">
-                    <i class="fab fa-youtube mr-2"></i> Listen on YouTube
+    <section id="home" class="hero-bg text-white relative">
+        <div class="gradient-overlay absolute inset-0"></div>
+        <div class="container mx-auto px-6 py-20 md:py-32 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Unlock Knowledge On The Go</h1>
+            <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto">Access concise audio summaries of best-selling books, perfect for busy professionals and students. Learn smarter, not harder, with actionable insights you can use today from top non-fiction titles.</p>
+            <a href="https://www.youtube.com/@executivebooksummaries" target="_blank" class="cta-button text-lg">
+                <i class="fab fa-youtube mr-2"></i> Listen on YouTube
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">About Executive Book Summaries</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="images/about-us-image.jpg" alt="Person listening to an executive book summary on headphones, illustrating learning on the go" class="rounded-lg shadow-xl w-full" onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=About+Us+Image';">
+                </div>
+                <div class="md:w-1/2 text-lg space-y-4">
+                    <p>In today's fast-paced world, finding time to read can be a challenge. That's where Executive Book Summaries comes in. We transform key insights from impactful books into concise, engaging audio summaries, delivered in a podcast style.</p>
+                    <p>Our mission is to make valuable knowledge accessible to everyone, especially busy students and professionals. Whether you're commuting, exercising, or simply on the go, our summaries help you learn effectively and efficiently.</p>
+                    <p>We cover a wide range of topics, including best-sellers, investing, personal finance, health, productivity, and leadership. Stay ahead and enrich your mind without dedicating hours to reading full texts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-listen" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Why Tune In To Our Summaries?</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300">
+                    <div class="text-blue-600 mb-4 text-3xl"><i class="fas fa-clock"></i></div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Save Precious Time</h3>
+                    <p>Get the core ideas and actionable insights from influential books in a fraction of the time. Our audio book summaries are designed for efficiency.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300">
+                    <div class="text-blue-600 mb-4 text-3xl"><i class="fas fa-headphones-alt"></i></div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Learn Anywhere, Anytime</h3>
+                    <p>Our audio format is perfect for your commute, workouts, or any moment you can dedicate to audio learning. Absorb knowledge from leading authors and thinkers on the go.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300">
+                    <div class="text-blue-600 mb-4 text-3xl"><i class="fas fa-brain"></i></div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Expand Your Knowledge</h3>
+                    <p>Explore diverse topics like finance, health, technology, and personal development through our curated book summaries.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300">
+                    <div class="text-blue-600 mb-4 text-3xl"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Boost Your Growth</h3>
+                    <p>Apply practical wisdom from our executive summaries to enhance your career, improve your personal finance skills, and lead a more informed life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="summaries" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Explore Our Latest Summaries</h2>
+            <p class="text-center text-lg mb-12 max-w-xl mx-auto">Dive into some of our popular audio summaries. Find your next big idea or practical tip.</p>
+            <div class="grid grid-cols-1 gap-y-12">
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                    <img src="images/book-cover-buffett.jpg" alt="Book cover: The Essays of Warren Buffett: Lessons for Corporate America - Audio Summary" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x300/7F9CF5/FFFFFF?text=Buffett';">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">The Essays of Warren Buffett: Lessons for Corporate America</h3>
+                        <p class="text-gray-600 mb-4 text-sm">The essential collection of Buffett's wisdom from his legendary Berkshire Hathaway shareholder letters. Learn his game-changing investment philosophy.</p>
+                        <a href="https://youtu.be/29_FdMqWTK4?si=H03mVR3fHYXrQjqj" target="_blank" class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-md text-sm transition-colors duration-300 mt-auto">Listen Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                    <img src="images/book-cover-camillo.jpg" alt="Book cover: Laughing at Wall Street by Chris Camillo - Audio Summary" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x300/A3BFFA/FFFFFF?text=Camillo';">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Laughing at Wall Street - Chris Camillo</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Discover Chris Camillo's unconventional investing wisdom and how behavioral finance can give you an edge in the market by finding insights before they're priced in.</p>
+                        <a href="https://youtu.be/L_3KlJbc_1E?si=42UMsAkR9grBZ7bn" target="_blank" class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-md text-sm transition-colors duration-300 mt-auto">Listen Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover transition-all duration-300 flex flex-col">
+                     <img src="images/book-cover-lynch.jpg" alt="Book cover: Peter Lynch's Investment Principles - Audio Summary" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x300/CADBFC/FFFFFF?text=Lynch';">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Peter Lynch's Investment Principles</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Master legendary investor Peter Lynch's time-tested approach to finding market winners. Leverage everyday observations and understand key stock categories.</p>
+                        <a href="https://www.youtube.com/watch?v=-6Ng7nJD4_w&t=25s" target="_blank" class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-md text-sm transition-colors duration-300 mt-auto">Listen Now <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="https://www.youtube.com/@executivebooksummaries" target="_blank" class="cta-button">
+                    View All Summaries on YouTube
                 </a>
             </div>
-        </section>
-        <!-- END HERO SECTION -->
+        </div>
+    </section>
 
-        <section id="about" aria-labelledby="about-title" class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-6">
-                <h2 id="about-title" class="section-title">About Executive Book Summaries</h2>
-                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-                    <div class="md:w-1/2">
-                        <img src="images/about-us-image.jpg" alt="Person listening to an executive book summary on headphones, illustrating learning on the go" class="rounded-lg shadow-xl w-full h-auto object-cover">
-                    </div>
-                    <div class="md:w-1/2 text-lg space-y-4">
-                        <p>In today's fast-paced world, finding time to read can be a challenge. That's where Executive Book Summaries comes in. We transform key insights from impactful books into concise, engaging audio summaries, delivered in a podcast style.</p>
-                        <p>Our mission is to make valuable knowledge accessible to everyone, especially busy students and professionals. Whether you're commuting, exercising, or simply on the go, our summaries help you learn effectively and efficiently.</p>
-                        <p>We cover a wide range of topics, including best-sellers, investing, personal finance, health, productivity, and leadership. Stay ahead and enrich your mind without dedicating hours to reading full texts.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="why-listen" aria-labelledby="why-listen-title" class="py-16 md:py-24 bg-gray-100">
-            <div class="container mx-auto px-6">
-                <h2 id="why-listen-title" class="section-title">Why Tune In To Our Summaries?</h2>
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left">
-                        <div class="text-blue-600 mb-4 text-4xl"><i class="fas fa-clock" aria-hidden="true"></i></div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Save Precious Time</h3>
-                        <p>Get the core ideas and actionable insights from influential books in a fraction of the time. Our audio book summaries are designed for efficiency.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left">
-                        <div class="text-blue-600 mb-4 text-4xl"><i class="fas fa-headphones-alt" aria-hidden="true"></i></div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Learn Anywhere, Anytime</h3>
-                        <p>Our audio format is perfect for your commute, workouts, or any moment you can dedicate to audio learning. Absorb knowledge from leading authors and thinkers on the go.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left">
-                        <div class="text-blue-600 mb-4 text-4xl"><i class="fas fa-brain" aria-hidden="true"></i></div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Expand Your Knowledge</h3>
-                        <p>Explore diverse topics like finance, health, technology, and personal development through our curated book summaries.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-lg card-hover transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left">
-                        <div class="text-blue-600 mb-4 text-4xl"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Boost Your Growth</h3>
-                        <p>Apply practical wisdom from our executive summaries to enhance your career, improve your personal finance skills, and lead a more informed life.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="summaries" aria-labelledby="summaries-title" class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-6">
-                <h2 id="summaries-title" class="section-title">Explore Our Latest Summaries</h2>
-                <p class="text-center text-lg mb-12 max-w-xl mx-auto">Dive into some of our popular audio summaries. Find your next big idea or practical tip.</p>
-                <!-- Summaries section reverted to single column -->
-                <div class="grid grid-cols-1 gap-y-12">
-                    <article id="summary-buffett" aria-labelledby="title-buffett" class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover transition-all duration-300 flex flex-col">
-                        <img src="images/book-cover-buffett.jpg" alt="Book cover: The Essays of Warren Buffett: Lessons for Corporate America - Audio Summary" class="w-full h-56 sm:h-64 object-cover">
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 id="title-buffett" class="text-xl font-semibold mb-2 text-gray-800">The Essays of Warren Buffett: Lessons for Corporate America</h3>
-                            <p class="text-gray-600 mb-4 text-sm flex-grow">The essential collection of Buffett's wisdom from his legendary Berkshire Hathaway shareholder letters. Learn his game-changing investment philosophy.</p>
-                            <a href="https://youtu.be/29_FdMqWTK4?si=H03mVR3fHYXrQjqj" target="_blank" rel="noopener noreferrer" class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-md text-sm transition-colors duration-300 mt-auto self-start">Listen Now <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i></a>
-                        </div>
-                    </article>
-                    <article id="summary-camillo" aria-labelledby="title-camillo" class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover transition-all duration-300 flex flex-col">
-                        <img src="images/book-cover-camillo.jpg" alt="Book cover: Laughing at Wall Street by Chris Camillo - Audio Summary" class="w-full h-56 sm:h-64 object-cover">
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 id="title-camillo" class="text-xl font-semibold mb-2 text-gray-800">Laughing at Wall Street - Chris Camillo</h3>
-                            <p class="text-gray-600 mb-4 text-sm flex-grow">Discover Chris Camillo's unconventional investing wisdom and how behavioral finance can give you an edge in the market by finding insights before they're priced in.</p>
-                            <a href="https://youtu.be/L_3KlJbc_1E?si=42UMsAkR9grBZ7bn" target="_blank" rel="noopener noreferrer" class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-md text-sm transition-colors duration-300 mt-auto self-start">Listen Now <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i></a>
-                        </div>
-                    </article>
-                    <article id="summary-lynch" aria-labelledby="title-lynch" class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover transition-all duration-300 flex flex-col">
-                         <img src="images/book-cover-lynch.jpg" alt="Book cover: Peter Lynch's Investment Principles - Audio Summary" class="w-full h-56 sm:h-64 object-cover">
-                        <div class="p-6 flex flex-col flex-grow">
-                            <h3 id="title-lynch" class="text-xl font-semibold mb-2 text-gray-800">Peter Lynch's Investment Principles</h3>
-                            <p class="text-gray-600 mb-4 text-sm flex-grow">Master legendary investor Peter Lynch's time-tested approach to finding market winners. Leverage everyday observations and understand key stock categories.</p>
-                            <a href="https://www.youtube.com/watch?v=-6Ng7nJD4_w&t=25s" target="_blank" rel="noopener noreferrer" class="inline-block bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-md text-sm transition-colors duration-300 mt-auto self-start">Listen Now <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="text-center mt-12">
-                    <a href="https://www.youtube.com/@executivebooksummaries" target="_blank" rel="noopener noreferrer" class="cta-button">
-                        View All Summaries on YouTube
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" aria-labelledby="contact-title" class="py-16 md:py-24 bg-blue-600 text-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 id="contact-title" class="text-3xl md:text-4xl font-bold mb-6">Stay Connected & Keep Learning!</h2>
-                <p class="text-lg md:text-xl mb-10 max-w-xl mx-auto">Follow us on your favorite platforms to get the latest summaries, updates, and join our community of learners.</p>
-                <div class="social-icons flex justify-center space-x-6 mb-10" aria-label="Social media links">
-                    <a href="https://www.youtube.com/@executivebooksummaries" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors duration-300 text-3xl md:text-4xl" aria-label="Executive Book Summaries on YouTube">
-                        <i class="fab fa-youtube" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.facebook.com/ExecutiveBookSummaries" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors duration-300 text-3xl md:text-4xl" aria-label="Executive Book Summaries on Facebook">
-                        <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.instagram.com/executivebooksummaries" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors duration-300 text-3xl md:text-4xl" aria-label="Executive Book Summaries on Instagram">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://x.com/ExecBookSummary" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition-colors duration-300 text-3xl md:text-4xl" aria-label="Executive Book Summaries on X (formerly Twitter)">
-                        <i class="fab fa-twitter-square" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <p class="text-md">Have questions or book suggestions? Reach out to us on social media!</p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-gray-800 text-gray-300 py-10" aria-labelledby="footer-title">
+    <section id="contact" class="py-16 md:py-24 bg-blue-600 text-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 id="footer-title" class="sr-only">Footer</h2> <nav class="footer-nav mb-4" aria-label="Footer navigation">
-                <a href="#home" class="text-gray-400 hover:text-white mx-2 px-1 py-1">Home</a>
-                <span class="text-gray-500" aria-hidden="true">|</span>
-                <a href="#about" class="text-gray-400 hover:text-white mx-2 px-1 py-1">About</a>
-                <span class="text-gray-500" aria-hidden="true">|</span>
-                <a href="#summaries" class="text-gray-400 hover:text-white mx-2 px-1 py-1">Summaries</a>
-                <span class="text-gray-500" aria-hidden="true">|</span>
-                <a href="#why-listen" class="text-gray-400 hover:text-white mx-2 px-1 py-1">Why Listen?</a>
-                <span class="text-gray-500" aria-hidden="true">|</span>
-                <a href="#contact" class="text-gray-400 hover:text-white mx-2 px-1 py-1">Contact</a>
-            </nav>
-            <div class="mb-4" aria-label="Social media links">
-                <a href="https://www.youtube.com/@executivebooksummaries" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white mx-2 text-xl" aria-label="Executive Book Summaries on YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/ExecutiveBookSummaries" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white mx-2 text-xl" aria-label="Executive Book Summaries on Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/executivebooksummaries" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white mx-2 text-xl" aria-label="Executive Book Summaries on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://x.com/ExecBookSummary" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white mx-2 text-xl" aria-label="Executive Book Summaries on X (formerly Twitter)"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Stay Connected & Keep Learning!</h2>
+            <p class="text-lg md:text-xl mb-10 max-w-xl mx-auto">Follow us on your favorite platforms to get the latest summaries, updates, and join our community of learners.</p>
+            <div class="social-icons flex justify-center space-x-6 mb-10">
+                <a href="https://www.youtube.com/@executivebooksummaries" target="_blank" class="text-white hover:text-blue-200 transition-colors duration-300 text-3xl md:text-4xl">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/ExecutiveBookSummaries" target="_blank" class="text-white hover:text-blue-200 transition-colors duration-300 text-3xl md:text-4xl">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.instagram.com/executivebooksummaries" target="_blank" class="text-white hover:text-blue-200 transition-colors duration-300 text-3xl md:text-4xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/ExecBookSummary" target="_blank" class="text-white hover:text-blue-200 transition-colors duration-300 text-3xl md:text-4xl">
+                    <i class="fab fa-twitter-square"></i> </a>
             </div>
-            <p>&copy; <span id="currentYear">2024</span> Executive Book Summaries. All Rights Reserved.</p>
+            <p class="text-md">Have questions or book suggestions? Reach out to us on social media!</p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="container mx-auto px-6 text-center">
+            <nav class="footer-nav mb-4">
+                <a href="#home" class="text-gray-400 hover:text-white mx-2">Home</a> |
+                <a href="#about" class="text-gray-400 hover:text-white mx-2">About</a> |
+                <a href="#summaries" class="text-gray-400 hover:text-white mx-2">Summaries</a> |
+                <a href="#why-listen" class="text-gray-400 hover:text-white mx-2">Why Listen?</a> |
+                <a href="#contact" class="text-gray-400 hover:text-white mx-2">Contact</a>
+            </nav>
+            <div class="mb-4">
+                 <a href="https://www.youtube.com/@executivebooksummaries" target="_blank" class="social-icon text-gray-400 hover:text-white mx-2 text-xl"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/ExecutiveBookSummaries" target="_blank" class="social-icon text-gray-400 hover:text-white mx-2 text-xl"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/executivebooksummaries" target="_blank" class="social-icon text-gray-400 hover:text-white mx-2 text-xl"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/ExecBookSummary" target="_blank" class="social-icon text-gray-400 hover:text-white mx-2 text-xl"><i class="fab fa-twitter-square"></i></a>
+            </div>
+            <p>© 2024 Executive Book Summaries. All Rights Reserved.</p>
             <p class="text-sm mt-1">Designed to help you learn more, effectively.</p>
         </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const header = document.getElementById('site-header');
-            const mainContent = document.getElementById('main-content');
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            function setMainContentPadding() {
-                if (header && mainContent) {
-                    const headerHeight = header.offsetHeight;
-                    mainContent.style.paddingTop = headerHeight + 'px';
-                }
-            }
-
-            // Set padding on load and resize
-            setMainContentPadding();
-            window.addEventListener('resize', setMainContentPadding);
-
-            // Smooth scrolling for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-
-                    if (targetElement) {
-                        const headerHeight = header ? header.offsetHeight : 0;
-                        let elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
-
-                        // For sections other than #home, subtract header height
-                        // For #home, scroll to very top if header is meant to overlap or be part of hero
-                        let offsetPosition = elementPosition - headerHeight;
-                        if (targetId === "#home") {
-                           offsetPosition = elementPosition - headerHeight; // Or 0 if header should not offset #home
-                        }
-
-
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: 'smooth'
-                        });
-
-                        // Close mobile menu if open
-                        if (mobileMenu && mobileMenuButton && mobileMenuButton.getAttribute('aria-expanded') === 'true') {
-                            mobileMenu.classList.add('hidden');
-                            mobileMenuButton.setAttribute('aria-expanded', 'false');
-                            mobileMenuButton.innerHTML = '<span class="sr-only">Open main menu</span><i class="fas fa-bars text-xl"></i>';
-                        }
-                    }
-                });
-            });
-
-            // Mobile menu toggle
-            if (mobileMenuButton && mobileMenu) {
-                mobileMenuButton.addEventListener('click', function() {
-                    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
-                    mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
-                    mobileMenu.classList.toggle('hidden');
-                    mobileMenu.classList.toggle('absolute');
-                    mobileMenu.classList.toggle('top-16'); // Adjust based on header height
-                    mobileMenu.classList.toggle('left-0');
-                    mobileMenu.classList.toggle('right-0');
-                    mobileMenu.classList.toggle('bg-white');
-                    mobileMenu.classList.toggle('shadow-lg');
-                    mobileMenu.classList.toggle('p-4');
-                    mobileMenu.classList.toggle('md:relative');
-                    mobileMenu.classList.toggle('md:top-auto');
-                    mobileMenu.classList.toggle('md:shadow-none');
-                    mobileMenu.classList.toggle('md:p-0');
-
-
-                    if (!isExpanded) {
-                        mobileMenuButton.innerHTML = '<span class="sr-only">Close main menu</span><i class="fas fa-times text-xl"></i>';
-                    } else {
-                        mobileMenuButton.innerHTML = '<span class="sr-only">Open main menu</span><i class="fas fa-bars text-xl"></i>';
-                    }
-                });
-            }
-
-            // Set current year in footer
-            const currentYearSpan = document.getElementById('currentYear');
-            if (currentYearSpan) {
-                currentYearSpan.textContent = new Date().getFullYear();
-            }
-
-            // Optional: Change header style on scroll
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    header.classList.add('py-2', 'md:py-3');
-                    header.classList.remove('py-3', 'md:py-4');
-                } else {
-                    header.classList.add('py-3', 'md:py-4');
-                    header.classList.remove('py-2', 'md:py-3');
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                // Ensure the target element exists
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Get header height
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    // Calculate position to scroll to, subtracting header height
+                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = elementPosition - headerHeight;
+                
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
                 }
             });
         });
+
+        // Set current year in footer
+        // document.getElementById('currentYear').textContent = new Date().getFullYear(); // Commented out as copyright year is now hardcoded
     </script>
 
 </body>
